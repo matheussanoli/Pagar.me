@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <?php
 
 if (!function_exists('curl_init')) {
