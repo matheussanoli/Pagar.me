@@ -24,7 +24,6 @@
     require("pagarme-php-master/Pagarme.php");
 
     if ($_POST) {
-        $CARD_HASH = $_POST["card_hash"];
         $bank_code = $_POST["bank_code"];
 $agencia = $_POST["agencia"];
 $agencia_dv = $_POST["agencia_dv"];
@@ -45,6 +44,6 @@ $legal_name = $_POST["legal_name"];
         $account->create();
         $bankid = $account["id"];
         echo "<h3>Conta cadastrada com sucesso<h3>";
-        echo "<a href='criarRecebedor.php?bankid=$bankid&cardhash=$CARD_HASH' class='btn btn-success'>Cadastrar Recebedor</a>";
+        echo "<a href='criarRecebedor.php?bankid=$bankid' class='btn btn-success'>Cadastrar Recebedor</a>";
     }
         ?>
